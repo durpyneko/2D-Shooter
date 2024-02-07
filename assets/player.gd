@@ -8,8 +8,8 @@ var health: float = 100.0
 @export var bullet_speed = 900
 @export var shoot_timer := 0.0
 @export var shoot_interval := 0.2
-@export var projectile = preload("res://bullet.tscn")
-@onready var hud_scene: PackedScene = load("res://hud.tscn")
+@export var projectile = preload("res://scenes/bullet.tscn")
+@onready var hud_scene: PackedScene = load("res://scenes/hud.tscn")
 @onready var spawn_point: Marker2D = $Marker2D
 
 @onready var game_manager = get_node("/root/GameManager")

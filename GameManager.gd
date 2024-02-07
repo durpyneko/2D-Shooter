@@ -1,8 +1,8 @@
 extends Node
 
-@onready var enemy_scene: PackedScene = load("res://enemy.tscn")
-@onready var hud_scene: PackedScene = load("res://hud.tscn")
-@onready var pause_menu_scene: PackedScene = load("res://pause_menu.tscn")
+@onready var enemy_scene: PackedScene = load("res://scenes/enemy.tscn")
+@onready var hud_scene: PackedScene = load("res://scenes/hud.tscn")
+@onready var pause_menu_scene: PackedScene = load("res://scenes/pause_menu.tscn")
 
 var wave: int = 1
 var enemies_remaining: int = 2

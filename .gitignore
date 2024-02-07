@@ -2,3 +2,5 @@
 .godot/
 export/
 addons/
+*.tmp
+assets/wakatime_logo.jpg
