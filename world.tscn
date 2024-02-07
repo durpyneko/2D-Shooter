@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx2wt22shhwvg"]
+
+[ext_resource type="PackedScene" uid="uid://d2b2158fgt87e" path="res://player.tscn" id="1_hqtiq"]
+[ext_resource type="PackedScene" uid="uid://byv0gp5swhily" path="res://spawn_point.tscn" id="3_5u5l0"]
+
+[node name="World" type="Node2D" groups=["Level"]]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 2178.0
+offset_bottom = 1443.0
+scale = Vector2(0.534828, 0.456584)
+color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[node name="Player" parent="." instance=ExtResource("1_hqtiq")]
+position = Vector2(600, 300)
+
+[node name="SpawnPoint" parent="." instance=ExtResource("3_5u5l0")]
+position = Vector2(1100, 60)
+
+[node name="SpawnPoint2" parent="." instance=ExtResource("3_5u5l0")]
+position = Vector2(1100, 600)
+
+[node name="SpawnPoint3" parent="." instance=ExtResource("3_5u5l0")]
+position = Vector2(50, 600)
+
+[node name="SpawnPoint4" parent="." instance=ExtResource("3_5u5l0")]
+position = Vector2(50, 50)

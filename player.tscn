@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2b2158fgt87e"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_ehj0t"]
+[ext_resource type="Texture2D" uid="uid://bagt0msf0yd35" path="res://sprites/player.png" id="2_t54fo"]
+[ext_resource type="AudioStream" uid="uid://djy768ty4kti" path="res://sound/laser.mp3" id="3_kghyf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w561i"]
+size = Vector2(42, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5v3x"]
+size = Vector2(44, 44)
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+script = ExtResource("1_ehj0t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_w561i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.625, 2.625)
+texture = ExtResource("2_t54fo")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(1.1, 1.1)
+shape = SubResource("RectangleShape2D_l5v3x")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(42, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_kghyf")
+volume_db = -30.0
