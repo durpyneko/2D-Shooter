@@ -9,7 +9,7 @@
 
 obvisously has bugs and window issues currently
 
-will add releases soon
+might add releases sometime
 
 ## Engine
 https://godotengine.org/
